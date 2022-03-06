@@ -48,14 +48,12 @@ function Filme() {
 
       <div className="botoes">
         <button>Salvar</button>
-        <button>
-          <a
-            target="blank"
-            href={`https://www.youtube.com/results?search_query=${filme.nome} Trailer`}
-          >
-            Trailer
-          </a>
-        </button>
+        <a
+          target="blank"
+          href={`https://www.youtube.com/results?search_query=${filme.nome} Trailer`}
+        >
+          <button>Trailer</button>
+        </a>
       </div>
     </div>
   );
