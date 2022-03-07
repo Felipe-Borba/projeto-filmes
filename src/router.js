@@ -3,6 +3,7 @@ import React from "react";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Filme from "./pages/Filme";
+import Favoritos from "./pages/Favoritos";
 
 function Router() {
   return (
@@ -11,6 +12,7 @@ function Router() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/filme/:id" element={<Filme />} />
+        <Route path="/favoritos" element={<Favoritos />} />
       </Routes>
     </BrowserRouter>
   );
